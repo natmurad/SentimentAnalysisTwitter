@@ -1,6 +1,6 @@
 # Sentiment Analysis with Twitter Data
 
-### Natalia Faraj Murad
+### Natália Faraj Murad
 
 This is a script for download, clean and analyse data from Twitter.
 It collect tweets about some subject, in this, the subject is "vaccines".
