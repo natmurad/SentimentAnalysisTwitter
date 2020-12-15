@@ -145,7 +145,7 @@ comparison.cloud(tpol,
 #Other kind of wordcloud
 tweets1 <- as.matrix(tweets$text)
 
-# Gerando uma nuvem palavras
+#Generating the wordcloud
 pal2 <- brewer.pal(8,"Dark2")
 
 wordcloud(tweets1, 
@@ -219,25 +219,25 @@ termo_por_documento = as.matrix(TermDocumentMatrix(tweetcorpus), control = list(
 tweettdm <- TermDocumentMatrix(tweetcorpus)
 
 
-# Removendo termos esparsos (não utilizados frequentemente)
+#Removing sparse terms
 tweet2tdm <- removeSparseTerms(tweettdm, sparse = 0.9)
 
-# Criando escala nos dados
+#Creating data scale
 tweet2tdmscale <- scale(tweet2tdm)
 
 # Distance Matrix
 tweetdist <- dist(tweet2tdmscale, method = "euclidean")
 
-# Preparando o dendograma
+#Preparing a dendogram
 tweetfit <- hclust(tweetdist)
 
-# Criando o dendograma (verificando como as palvras se agrupam)
+#Creating the dendogram
 plot(tweetfit)
 
 #Creating function to compare the words with a list
 sentimento.score = function(sentences, pos.words, neg.words,
                             .progress = 'none'){
-  #Create an array with the scores
+ #Create an array with the scores
   scores = laply(sentences,
                  function(sentence, pos.words, neg.words){
                    sentence = gsub("[[:punct:]]", "", sentence)
