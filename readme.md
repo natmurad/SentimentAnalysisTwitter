@@ -7,7 +7,7 @@ It collect tweets about some subject, in this, the subject is "vaccines".
 Then remove characters not of interest.
 So, it is performed an analysis to detect which words appear more, the feeling associated with these words.
 Which words are associated and etc.
-A report with comments can be acessed on my [Rpubs page](https://rpubs.com/natmurad/sentimentanalysistweets)
+A report with comments can be acessed on my [Rpubs page](https://rpubs.com/natmurad/sentimentanalysistwitter) 
 
 ## File Description
 
