@@ -1,7 +1,5 @@
 # Sentiment Analysis with Twitter Data
 
-### Natália Faraj Murad
-
 This is a script for download, clean and analyse data from Twitter.
 It collect tweets about some subject, in this, the subject is "vaccines".
 Then remove characters not of interest.
@@ -11,8 +9,8 @@ A report with comments can be acessed on my [Rpubs page](https://rpubs.com/natmu
 
 ## File Description
 
-SentimentAnalysisTweets.R - the script to perform the analysis
+```SentimentAnalysisTweets.R``` - the script to perform the analysis
 
-palavras_negativas.txt - a list with negative words
+```palavras_negativas.txt``` - a list with negative words
 
-palavras_positivas.txt - a list with positive words
+```palavras_positivas.txt``` - a list with positive words
